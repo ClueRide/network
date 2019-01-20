@@ -15,7 +15,7 @@
  *
  * Created by jett on 1/19/19.
  */
-package com.clueride.network.imp.edge;
+package com.clueride.imp.edge;
 
 /**
  * TODO: Description.

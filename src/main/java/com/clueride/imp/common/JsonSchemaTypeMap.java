@@ -15,7 +15,7 @@
  *
  * Created Oct 9, 2015
  */
-package com.clueride.network.imp.common;
+package com.clueride.imp.common;
 
 import java.util.HashMap;
 import java.util.Map;

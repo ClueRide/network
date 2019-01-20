@@ -15,7 +15,7 @@
  *
  * Created by jett on 1/15/19.
  */
-package com.clueride.network.imp.edge;
+package com.clueride.imp.edge;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -31,9 +31,9 @@ import org.geotools.geojson.feature.FeatureJSON;
 import org.geotools.geojson.geom.GeometryJSON;
 import org.opengis.feature.simple.SimpleFeature;
 
-import com.clueride.network.imp.common.JsonSchemaTypeMap;
-import com.clueride.network.imp.common.JsonStoreLocation;
-import com.clueride.network.imp.common.JsonStoreType;
+import com.clueride.imp.common.JsonSchemaTypeMap;
+import com.clueride.imp.common.JsonStoreLocation;
+import com.clueride.imp.common.JsonStoreType;
 
 /**
  * Knows how to pull the GeoJSON-based Edges into memory.

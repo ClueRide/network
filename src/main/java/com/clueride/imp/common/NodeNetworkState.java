@@ -15,7 +15,7 @@
  *
  * Created Aug 21, 2015
  */
-package com.clueride.network.imp.common;
+package com.clueride.imp.common;
 
 /**
  * Summary of a Node's relationship with a particular network.
