@@ -15,7 +15,7 @@
  *
  * Created by jett on 1/15/19.
  */
-package com.clueride.network.imp;
+package com.clueride.imp;
 
 import java.lang.invoke.MethodHandles;
 
@@ -24,7 +24,7 @@ import org.jboss.weld.environment.se.WeldContainer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.clueride.network.imp.edge.EdgeImport;
+import com.clueride.imp.edge.EdgeImport;
 
 /**
  * Utility to read and persist Edges from GeoJSON into the

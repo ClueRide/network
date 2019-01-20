@@ -15,7 +15,7 @@
  *
  * Created by jett on 1/15/19.
  */
-package com.clueride.network.imp.edge;
+package com.clueride.imp.edge;
 
 import com.vividsolutions.jts.geom.LineString;
 

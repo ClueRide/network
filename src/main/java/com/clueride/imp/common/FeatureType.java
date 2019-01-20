@@ -15,7 +15,7 @@
  *
  * Created Aug 16, 2015
  */
-package com.clueride.network.imp.common;
+package com.clueride.imp.common;
 
 import com.vividsolutions.jts.geom.LineString;
 import com.vividsolutions.jts.geom.Point;

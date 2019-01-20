@@ -19,6 +19,9 @@ package com.clueride.network.edge;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
+
+import com.clueride.RecordNotFoundException;
 
 /**
  * JPA-based implementation of {@link EdgeStore}.
@@ -30,7 +33,21 @@ public class EdgeStoreJpa implements EdgeStore {
 
     @Override
     public EdgeBuilder getEdgeById(Integer id) {
-        return entityManager.find(EdgeBuilder.class, id);
+        EdgeBuilder builder = entityManager.find(EdgeBuilder.class, id);
+        if (builder == null) {
+            throw new RecordNotFoundException("Edge with ID " + id + " not found");
+        }
+        return builder;
+    }
+
+    @Override
+    public EdgeBuilder getEdgeByOriginalId(Integer originalId) {
+        TypedQuery<EdgeBuilder> tq = entityManager.createQuery("from edge WHERE originalEdgeId=:originalId", EdgeBuilder.class);
+        EdgeBuilder builder = tq.setParameter("originalId", originalId).getSingleResult();
+        if (builder == null) {
+            throw new RecordNotFoundException("Edge with Original ID " + originalId + " not found");
+        }
+        return builder;
     }
 
     @Override

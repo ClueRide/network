@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Created by jett on 1/13/19.
+ * Created by jett on 1/19/19.
  */
-package com.clueride.network.edge;
+package com.clueride.imp.edge;
 
 /**
- * Defines persistence operations on an {@link Edge} instance.
+ * TODO: Description.
  */
-public interface EdgeStore {
-    EdgeBuilder getEdgeById(Integer id);
-
-    EdgeBuilder getEdgeByOriginalId(Integer originalId);
-
-    EdgeBuilder persist(EdgeBuilder edgeBuilder);
+public interface EdgeImport {
+    /**
+     * Perform the work of importing Edges.
+     * @return Integer success if zero.
+     */
+    int run();
 }

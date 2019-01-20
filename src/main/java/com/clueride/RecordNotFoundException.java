@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Jett Marks
+ * Copyright 2017 Jett Marks
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,17 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Created by jett on 1/19/19.
+ * Created by jett on 8/2/17.
  */
-package com.clueride.network.imp.edge;
+package com.clueride;
 
 /**
- * TODO: Description.
+ * Indicates the record requested is not available.
  */
-public interface EdgeImport {
+public class RecordNotFoundException extends RuntimeException {
+
     /**
-     * Perform the work of importing Edges.
-     * @return Integer success if zero.
+     * No arg constructor.
      */
-    int run();
+    public RecordNotFoundException() {
+        super();
+    }
+
+    /**
+     * Single arg constructor.
+     * @param s logged along with exception.
+     */
+    public RecordNotFoundException(String s) {
+        super(s);
+    }
 }
